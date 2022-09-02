@@ -1,8 +1,9 @@
 server:
   port: 8080
+#Set yours database information
 spring:
   datasource:
-    url:
-    username:
-    password:
-    driver-class-name:
+    url: jdbc:oracle:thin:@localhost:1522/ORCL11g
+    username: DMYXYG
+    password: 123456
+    driver-class-name: oracle.jdbc.OracleDriver
