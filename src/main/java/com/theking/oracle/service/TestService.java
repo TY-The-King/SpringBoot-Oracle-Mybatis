@@ -15,7 +15,9 @@ public interface TestService {
      * @date 2022/9/2 17:00
      * @return java.util.List<com.theking.oracle.entity.TestDTO>
      */
-    public List<TestDTO> getTest();
+    List<TestDTO> getTest();
 
-    public int insert(List<TestDTO> list);
+    int insert(List<TestDTO> list);
+
+    int delete();
 }

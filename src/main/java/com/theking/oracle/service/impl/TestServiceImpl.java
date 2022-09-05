@@ -30,4 +30,8 @@ public class TestServiceImpl implements TestService {
     public int insert(List<TestDTO> list){
         return testMapper.insert(list);
     }
+
+    public int delete(){
+        return testMapper.delete();
+    }
 }

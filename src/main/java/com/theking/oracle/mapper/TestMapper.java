@@ -19,4 +19,6 @@ public interface TestMapper {
     List<TestDTO> getTest();
 
     int insert(List<TestDTO> list);
+
+    int delete();
 }

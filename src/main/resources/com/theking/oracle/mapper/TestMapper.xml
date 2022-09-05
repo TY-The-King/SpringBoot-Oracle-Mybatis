@@ -9,4 +9,7 @@
     <insert id="insert" parameterType="java.util.List">
         insert into DMYXYG.TEST2022830(ID,NAME) VALUES(#{id},#{name})
     </insert>
+    <delete id="delete">
+        delete DMYXYG.TEST2022830
+    </delete>
 </mapper>

@@ -3,7 +3,7 @@ server:
 #Set yours database information
 spring:
   datasource:
-    url: jdbc:oracle:thin:@localhost:1522/ORCL11g
-    username: DMYXYG
-    password: 123456
+    url: jdbc:oracle:thin:@1.12.62.6:1521/helowin
+    username: theking
+    password: cjs524821
     driver-class-name: oracle.jdbc.OracleDriver
