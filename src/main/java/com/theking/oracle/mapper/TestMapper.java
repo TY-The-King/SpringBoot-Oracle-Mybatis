@@ -17,4 +17,6 @@ public interface TestMapper {
      * @return java.util.List<com.theking.oracle.entity.TestDTO>
      */
     List<TestDTO> getTest();
+
+    int insert(List<TestDTO> list);
 }

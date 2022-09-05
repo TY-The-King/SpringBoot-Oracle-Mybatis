@@ -26,4 +26,8 @@ public class TestServiceImpl implements TestService {
     public List<TestDTO> getTest(){
         return testMapper.getTest();
     }
+
+    public int insert(List<TestDTO> list){
+        return testMapper.insert(list);
+    }
 }

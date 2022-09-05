@@ -16,4 +16,6 @@ public interface TestService {
      * @return java.util.List<com.theking.oracle.entity.TestDTO>
      */
     public List<TestDTO> getTest();
+
+    public int insert(List<TestDTO> list);
 }

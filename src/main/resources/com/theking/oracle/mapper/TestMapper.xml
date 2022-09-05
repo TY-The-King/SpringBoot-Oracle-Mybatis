@@ -6,4 +6,7 @@
     <select id="getTest" resultType="com.theking.oracle.entity.TestDTO">
         select ID "id",NAME "name" from DMYXYG.TEST2022830
     </select>
+    <insert id="insert" parameterType="java.util.List">
+        insert into DMYXYG.TEST2022830(ID,NAME) VALUES(#{id},#{name})
+    </insert>
 </mapper>
