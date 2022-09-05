@@ -16,9 +16,16 @@ public interface TestMapper {
      * @date 2022/9/2 16:58
      * @return java.util.List<com.theking.oracle.entity.TestDTO>
      */
-    List<TestDTO> getTest();
+    List<TestDTO> getTest(Integer id);
 
+    /**
+     * insert data to test table
+     * @param list-insert data
+     */
     int insert(List<TestDTO> list);
 
+    /**
+     * delete data with id
+     */
     int delete();
 }

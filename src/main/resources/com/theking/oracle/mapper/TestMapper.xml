@@ -3,13 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.theking.oracle.mapper.TestMapper">
-    <select id="getTest" resultType="com.theking.oracle.entity.TestDTO">
-        select ID "id",NAME "name" from DMYXYG.TEST2022830
+    <select id="getTest" parameterType="java.lang.Integer" resultType="com.theking.oracle.entity.TestDTO">
+        select ID "id",NAME "name" from THEKING.TEST A where A.ID = #{id}
     </select>
     <insert id="insert" parameterType="java.util.List">
-        insert into DMYXYG.TEST2022830(ID,NAME) VALUES(#{id},#{name})
+        insert into THEKING.TEST(ID,NAME) VALUES(#{id},#{name})
     </insert>
     <delete id="delete">
-        delete DMYXYG.TEST2022830
+        delete THEKING.TEST A where A.ID = #{id}
     </delete>
 </mapper>

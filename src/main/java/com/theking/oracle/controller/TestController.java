@@ -10,11 +10,20 @@ import java.util.List;
 @RestController
 public class TestController {
 
-    @Autowired
-    TestService testService;
+    private final TestService testService;
 
+    @Autowired
+    public TestController(TestService testService){
+        this.testService = testService;
+    }
+
+    /**
+     * get test data with id
+     * @param id-you want select id with user
+     * @return user information
+     */
     @GetMapping("/get")
-    public List<TestDTO> getTest(){
-        return testService.getTest();
+    public List<TestDTO> getTest(Integer id){
+        return testService.getTest(id);
     }
 }

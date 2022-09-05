@@ -14,23 +14,34 @@ import java.util.List;
 @Service
 public class TestServiceImpl implements TestService {
 
+    private final TestMapper testMapper;
+
     @Autowired
-    TestMapper testMapper;
+    public TestServiceImpl(TestMapper testMapper){
+        this.testMapper = testMapper;
+    }
 
     /**
-     * get tets table all data
+     * get test data with id
      * @author theking
      * @date 2022/9/2 17:01
      * @return java.util.List<com.theking.oracle.entity.TestDTO>
      */
-    public List<TestDTO> getTest(){
-        return testMapper.getTest();
+    public List<TestDTO> getTest(Integer id){
+        return testMapper.getTest(id);
     }
 
+    /**
+     * insert to test
+     * @param list-insert data
+     */
     public int insert(List<TestDTO> list){
         return testMapper.insert(list);
     }
 
+    /**
+     * delete test with id
+     */
     public int delete(){
         return testMapper.delete();
     }
