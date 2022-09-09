@@ -1,7 +1,6 @@
 package com.theking.oracle.service;
 
 import com.theking.oracle.entity.TestDTO;
-
 import java.util.List;
 
 /**
