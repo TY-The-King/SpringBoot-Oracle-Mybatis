@@ -6,9 +6,11 @@
     <select id="getTest" parameterType="java.lang.Integer" resultType="com.theking.oracle.entity.TestDTO">
         select ID "id",NAME "name" from THEKING.TEST A where A.ID = #{id}
     </select>
+
     <insert id="insert" parameterType="java.util.List">
         insert into THEKING.TEST(ID,NAME) VALUES(#{id},#{name})
     </insert>
+
     <delete id="delete">
         delete THEKING.TEST A where A.ID = #{id}
     </delete>
